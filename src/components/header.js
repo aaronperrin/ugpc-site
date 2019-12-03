@@ -13,9 +13,7 @@ const Header = ({ siteTitle }) => (
     <div
       className="full-width-image margin-top-0"
       style={{
-        backgroundImage: `url(${
-         "podcast_brand.png"
-        })`
+        backgroundImage: `url(${"IMG-9181.jpg"})`
       }}
     ></div>
   </header>
