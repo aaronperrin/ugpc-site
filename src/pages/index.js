@@ -21,7 +21,7 @@ const IndexPage = () => (
           <li><a href="https://youtu.be/1vARs72POCI">50. SLUICE</a></li>
           <li><a href="https://youtu.be/e1x8GLWsLcw">49. Thagameiser</a></li>
           <li><a href="https://youtu.be/k696r0t4c4Y">48. Tire Champ</a></li>
-          <li><a href="https://youtu.be/ULvxoGKdpKM">47. 'Lofus'</a></li>
+          <li><a href="https://youtu.be/ULvxoGKdpKM">47. Lofus</a></li>
           <li><a href="https://youtu.be/lFZlOtOEip4">46. Skuzzy Bros</a></li>
           <li><a href="https://youtu.be/3ZmTD-V8FqE">45. The Real JC</a></li>
           <li><a href="https://youtu.be/su_Rn2rX2oA">44. Boogology</a></li>
@@ -38,7 +38,7 @@ const IndexPage = () => (
           <li><a href="https://youtu.be/dIHE1c-ZMIw">33. Reptile Disfunction</a></li>
           <li><a href="https://youtu.be/UYW0UC43QKY">32. Bros Before Does</a></li>
           <li><a href="https://youtu.be/C1J6Ljnlx8Q">31. Spam Sweat</a></li>
-          <li><a href="https://youtu.be/lv6ECEEoZkA">29.5. Spawns</a></li>
+          <li><a href="https://youtu.be/lv6ECEEoZkA">29.5 Spawns</a></li>
           <li><a href="https://youtu.be/4hCzK_jBTkI">29. Milk Rag</a></li>
           <li><a href="https://youtu.be/fZEaUwRtorQ">28. Invalids</a></li>
           <li><a href="https://youtu.be/eNWMBbQpeBg">27. Codger Magnet</a></li>
@@ -47,7 +47,7 @@ const IndexPage = () => (
           <li><a href="https://youtu.be/C3ubfowN4K0">24. Horror Show</a></li>
           <li><a href="https://youtu.be/Gsf1RljhdKI">23. Park Ave</a></li>
           <li><a href="https://youtu.be/QGYwcHym0Zg">22. Brothers</a></li>
-          <li><a href="https://youtu.be/CLN3ViB4eKI">21.Tic Cup</a></li>
+          <li><a href="https://youtu.be/CLN3ViB4eKI">21. Tic Cup</a></li>
           <li><a href="https://youtu.be/EPlEiA2_yh4">20. Big Red</a></li>
           <li><a href="https://youtu.be/R6iqWlRuYIY">19. Ramp Dust</a></li>
           <li><a href="https://youtu.be/B-Wja5IyOyQ">18. Read the Bones</a></li>
