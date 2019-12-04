@@ -16,7 +16,6 @@ const Episodes = () => {
         edges {
           node {
             frontmatter {
-              path
               date
               title
               description

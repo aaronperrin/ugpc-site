@@ -17,6 +17,11 @@
   list-style: outside none none !important;
 }
 
+* {
+  background-color: #feef00 !important;
+  color: #245eca;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -26,7 +31,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #feef00;
 }
 article,
 aside,
