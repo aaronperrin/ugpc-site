@@ -1,8 +1,8 @@
 ---
 number: 54
-title: "Wooden Nickles"
-date: "2019-12-01"
-description: "In this episode of therapy we listen as Uncle Meat and Kaos Kris settle some internal issues. Big Red calls in to give us the sports report and words of wisdom. Listen how wrong we are at predicting sporting event results."
-youtube: "https://youtu.be/M2VTjMu6iJA"
-itunes: "https://podcasts.apple.com/us/podcast/episode-54-new-era/id1471187072?i=1000457730465"
+title: "NEW ERA"
+date: "2019-11-24"
+description: "In this episode of therapy we introduce you all to the NEW ERA!"
+youtube: "https://youtu.be/iYngGmYnI58"
+itunes: ""
 ---

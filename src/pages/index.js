@@ -13,6 +13,7 @@ const IndexPage = (
     },
   }
 ) => {
+  const YoutubeID = edge.node.frontmatter.youtube.split("/")[1]
   const Episodes = edges
     .map(edge =>
       <Card>
@@ -23,6 +24,16 @@ const IndexPage = (
           <Card.Body>
             <div>{edge.node.frontmatter.description}</div>
             <div>{edge.node.frontmatter.youtube}</div>
+            <a
+              href={edge.node.frontmatter.youtube}
+              style={{
+                display:"inline-block",
+                overflow:"hidden",
+                background:"url(https://img.youtube.com/vi/" + YoutubeID + "/1.jpg) no-repeat",
+                width:"170px",
+                height:"80px",
+              }}>
+            </a>
             <a
               href={edge.node.frontmatter.itunes}
               style={{
