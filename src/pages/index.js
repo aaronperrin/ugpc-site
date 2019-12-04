@@ -14,8 +14,8 @@ const IndexPage = (
   const Episodes = edges
     .map(edge =>
       <article>
+        <h2>#{edge.node.frontmatter.number} {edge.node.frontmatter.title}</h2>
         <div>{edge.node.frontmatter.date}</div>
-        <div>{edge.node.frontmatter.number}</div>
         <div>{edge.node.frontmatter.path}</div>
         <div>{edge.node.frontmatter.youtube}</div>
         <div>{edge.node.frontmatter.description}</div>
