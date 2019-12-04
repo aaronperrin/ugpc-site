@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -28,7 +27,7 @@ const IndexPage = () => (
           <li><a href="https://youtu.be/NYFLv-cNjH0">43. Shuckin</a></li>
           <li><a href="https://youtu.be/g7TdLDtCuFw">42. Wet Toes</a></li>
           <li><a href="https://youtu.be/RO2giMK3V7k">41. K you B!</a></li>
-          <li><a href="https://youtu.be/n8egT8L9_2A">40. UFC Party</a></li>  
+          <li><a href="https://youtu.be/n8egT8L9_2A">40. UFC Party</a></li>
           <li><a href="https://youtu.be/5HkE5OmSZXc">39. REX</a></li>
           <li><a href="https://youtu.be/M0p2SpgcSo8">38. Stung</a></li>
           <li><a href="https://youtu.be/RaxA3Qcm-hw">37. SpecialK10K</a></li>
@@ -51,7 +50,7 @@ const IndexPage = () => (
           <li><a href="https://youtu.be/EPlEiA2_yh4">20. Big Red</a></li>
           <li><a href="https://youtu.be/R6iqWlRuYIY">19. Ramp Dust</a></li>
           <li><a href="https://youtu.be/B-Wja5IyOyQ">18. Read the Bones</a></li>
-          
+
         </ul>
       </div>
     </div>
