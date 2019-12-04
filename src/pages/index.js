@@ -12,13 +12,26 @@ const IndexPage = (
   }
 ) => {
   const Episodes = edges
-    .map(edge => <div>{edge.node.frontmatter.path}</div>)
+    .map(edge =>
+      <article>
+        <div>{edge.node.frontmatter.date}</div>
+        <div>{edge.node.frontmatter.number}</div>
+        <div>{edge.node.frontmatter.path}</div>
+        <div>{edge.node.frontmatter.youtube}</div>
+        <div>{edge.node.frontmatter.description}</div>
+        <div>{edge.node.frontmatter.itunes}</div>
+      </article>
+    )
 
   return (
     <Layout>
       <SEO title="Home" />
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
+        <hgroup>
+          <Image />
+          <h1>US GUYZ</h1>
+          <h2>Podcast, Volume 1</h2>
+        </hgroup>
         <div>{Episodes}</div>
         <div id="toc_container">
           <p className="toc_title">Contents</p>
@@ -70,15 +83,17 @@ const IndexPage = (
 }
 
 export const pageQuery = graphql`query MyQuery {
-  allMarkdownRemark {
+  allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___number] }) {
     edges {
       node {
         frontmatter {
+          number
           path
           date
           title
           description
           youtube
+          itunes
         }
       }
     }
