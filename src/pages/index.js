@@ -15,7 +15,9 @@ const IndexPage = (
 ) => {
   const Episodes = edges
     .map(edge => {
-      const youtubeId = edge.node.frontmatter.youtube.split("/")[3];
+      const youtubeId = edge.node.frontmatter.youtube;
+      const soundcloudId = edge.node.frontmatter.soundcloud;
+      const itunesId = edge.node.frontmatter.itunes;
       return (
         <Card>
           <Accordion.Toggle as={Button} variant="link" eventKey={edge.node.frontmatter.number} style={{textAlign:"left"}}>
@@ -25,22 +27,35 @@ const IndexPage = (
             <Card.Body>
               <Row>
                 <Col>
-                  {edge.node.frontmatter.description}
+                  <p>
+                    {edge.node.frontmatter.description}
+                  </p>
                 </Col>
               </Row>
               <Row>
                 <Col>
-                  <iframe className="youtube-iframe" src={"https://www.youtube.com/embed/" + youtubeId}/>
+                  <iframe
+                    className="youtube-iframe"
+                    title={"Watch on Youtube - " + edge.node.frontmatter.title}
+                    src={"https://www.youtube.com/embed/" + youtubeId}
+                  />
                 </Col>
               </Row>
               <Row>
                 <Col>
-                  <iframe width="300px;" height="166" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/645295365&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"/>
+                  <iframe
+                    className="soundcloud-iframe"
+                    title={"Listen on Soundcloud - " + edge.node.frontmatter.title}
+                    src={"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/" + soundcloudId + "&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"}
+                  />
                 </Col>
               </Row>
               <Row>
                 <Col>
-                  <a className="itunes-link" href={edge.node.frontmatter.itunes}/>
+                  <a
+                    className="itunes-link"
+                    href={"https://podcasts.apple.com/us/podcast/" + itunesId}
+                  />
                 </Col>
               </Row>
             </Card.Body>
@@ -74,6 +89,7 @@ export const pageQuery = graphql`query MyQuery {
           description
           youtube
           itunes
+          soundcloud
         }
       }
     }

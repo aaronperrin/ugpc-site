@@ -14,10 +14,17 @@
 }
 
 .youtube-iframe {
-    title: "youtube link";
-    width: 480px;
+    width: 200px;
     height: 200px;
     frameBorder: 0;
     allow: accelerometer autoplay encrypted-media gyroscope picture-in-picture;
     allowFullScreen: true;
+}
+
+.soundcloud-iframe {
+    width: 300px;
+    height: 166px;
+    scrolling: no;
+    frameBorder: no;
+    allow: autoplay;
 }
