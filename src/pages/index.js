@@ -15,7 +15,7 @@ const IndexPage = (
 ) => {
   const Episodes = edges
     .map(edge => {
-      const a = edge.node.frontmatter.youtube.split("/")[3];
+      const youtubeId = edge.node.frontmatter.youtube.split("/")[3];
       return (
         <Card>
           <Accordion.Toggle as={Button} variant="link" eventKey={edge.node.frontmatter.number} style={{textAlign:"left"}}>
@@ -23,34 +23,31 @@ const IndexPage = (
           </Accordion.Toggle>
           <Accordion.Collapse eventKey={edge.node.frontmatter.number}>
             <Card.Body>
-              <div>{edge.node.frontmatter.description}</div>
-              <div>{edge.node.frontmatter.youtube}</div>
-              <a
-                href={edge.node.frontmatter.youtube}
-                style={{
-                  display:"inline-block",
-                  overflow:"hidden",
-                  background:"url(https://img.youtube.com/vi/" + a + "/1.jpg) no-repeat",
-                  width:"170px",
-                  height:"80px",
-                }}>
-              </a>
-              <a
-                href={edge.node.frontmatter.itunes}
-                style={{
-                  display:"inline-block",
-                  overflow:"hidden",
-                  background:"url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2019-11-29&kind=podcast) no-repeat",
-                  width:"170px",
-                  height:"45px",
-                }}>
-              </a>
+              <Row>
+                <Col>
+                  {edge.node.frontmatter.description}
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <iframe className="youtube-iframe" src={"https://www.youtube.com/embed/" + youtubeId}/>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <iframe width="300px;" height="166" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/645295365&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"/>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <a className="itunes-link" href={edge.node.frontmatter.itunes}/>
+                </Col>
+              </Row>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
       )
     }
-
     )
 
   return (

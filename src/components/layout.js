@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import {Container, Row, Col} from "react-bootstrap"
 
 import Header from "./header"
-import "./layout.css"
+import "../styles/layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,13 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Container
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0
-        }}>
+      <Container>
         <Row>
           <Col>
             <Header siteTitle={data.site.siteMetadata.title} />

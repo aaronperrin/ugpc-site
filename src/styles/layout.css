@@ -1,0 +1,23 @@
+.youtube-link {
+    display: inline-block;
+    overflow: hidden;
+    width: 170px;
+    height: 80px;
+}
+
+.itunes-link {
+    display: inline-block;
+    overflow: hidden;
+    width: 170px;
+    height: 45px;
+    background: url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2019-11-29&kind=podcast) no-repeat;
+}
+
+.youtube-iframe {
+    title: "youtube link";
+    width: 480px;
+    height: 200px;
+    frameBorder: 0;
+    allow: accelerometer autoplay encrypted-media gyroscope picture-in-picture;
+    allowFullScreen: true;
+}
