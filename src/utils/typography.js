@@ -1,10 +1,10 @@
 import Typography from "typography"
 const typography = new Typography({
-  baseFontSize: "18px",
+  baseFontSize: "24px",
   baseLineHeight: 1.666,
   headerFontFamily: [
     'Luckiest Guy', 'san-serif'
   ],
-  bodyFontFamily: ['Ibarra Real Nova', 'serif'],
+  bodyFontFamily: ['serif'],
 })
 export default typography

@@ -28,3 +28,10 @@
     frameBorder: no;
     allow: autoplay;
 }
+
+
+* {
+    background-color: #feef00 !important;
+    color: #245eca;
+    text-transform: uppercase;
+}

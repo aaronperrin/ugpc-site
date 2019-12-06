@@ -21,7 +21,7 @@ const IndexPage = (
       return (
         <Card>
           <Accordion.Toggle as={Button} variant="link" eventKey={edge.node.frontmatter.number} style={{textAlign:"left"}}>
-            <h3>#{edge.node.frontmatter.number} {edge.node.frontmatter.title}</h3>
+            <h5>#{edge.node.frontmatter.number}. {edge.node.frontmatter.title}</h5>
           </Accordion.Toggle>
           <Accordion.Collapse eventKey={edge.node.frontmatter.number}>
             <Card.Body>
@@ -67,11 +67,13 @@ const IndexPage = (
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="UsGuyz Podcast" />
       <Image />
       <hgroup>
-        <h1>US GUYZ</h1>
-        <h3>Podcast, Volume 1</h3>
+        <span>
+          <h1>US GUYZ</h1>
+          <h4>Podcast, Volume 1</h4>
+        </span>
       </hgroup>
       <Accordion>{Episodes}</Accordion>
     </Layout>
