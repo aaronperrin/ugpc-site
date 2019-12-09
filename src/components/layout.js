@@ -29,7 +29,9 @@ const Layout = ({ children }) => {
       <Container>
         <Row>
           <Col>
-            <Header siteTitle={data.site.siteMetadata.title} />
+            <Header siteTitle={data.site.siteMetadata.title}>
+              <link rel="preconnect" href="https://youtube.com"/>
+            </Header>
           </Col>
         </Row>
         <main>{children}</main>
