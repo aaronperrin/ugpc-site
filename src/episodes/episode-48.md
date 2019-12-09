@@ -6,5 +6,5 @@ description: "In this episode we have long discussions on the importance of high
               With love without a glove, xoxo, Bdazz"
 youtube: "k696r0t4c4Y"
 itunes: "id1471187072?i=1000453345020"
-soundcloud: "699173749"
+soundcloud: "695147521"
 ---
