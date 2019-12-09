@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
         <Row>
           <Col>
             <Header siteTitle={data.site.siteMetadata.title}>
-              <link rel="preconnect" href="https://youtube.com"/>
+              <link rel="preconnect" href="https://fonts.googleapis.com"/>
             </Header>
           </Col>
         </Row>
