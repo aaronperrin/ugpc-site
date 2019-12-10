@@ -1,20 +1,7 @@
-#toc_container {
-  background: #f9f9f9 none repeat scroll 0 0;
-  border: 1px solid #aaa;
-  display: table;
-  font-size: 95%;
-  margin-bottom: 1em;
-  padding: 20px;
-  width: auto;
-}
-
-.toc_title {
-  font-weight: 700;
-  text-align: center;
-}
-
-#toc_container li, #toc_container ul, #toc_container ul li{
-  list-style: outside none none !important;
+@font-face {
+  font-family: 'Arvo';
+  font-display: auto;
+  src: local('Arvo'), url(https://fonts.gstatic.com/s/arvo/v9/rC7kKhY-eUDY-ucISTIf5PesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
 }
 
 * {

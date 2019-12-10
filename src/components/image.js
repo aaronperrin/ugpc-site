@@ -16,7 +16,7 @@ import Img from "gatsby-image"
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "podcast_brand.png" }) {
+      placeholderImage: file(relativePath: { eq: "podcast_brand_1200.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
