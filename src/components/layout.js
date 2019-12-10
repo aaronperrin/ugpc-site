@@ -29,9 +29,7 @@ const Layout = ({ children }) => {
       <Container>
         <Row>
           <Col>
-            <Header siteTitle={data.site.siteMetadata.title}>
-              <link rel="preconnect" href="https://fonts.googleapis.com"/>
-            </Header>
+            <Header siteTitle={data.site.siteMetadata.title}/>
           </Col>
         </Row>
         <main>{children}</main>
