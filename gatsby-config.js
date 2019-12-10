@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Usguyz Podcast - Home`,
-    description: `Experimental, long-form, discussion podcast made with balls in Northern Appalachia`,
+    title: `Usguyz Podcast`,
+    description: `Authentic, long-format, discussion and comedy podcast made with balls in Northern Appalachia`,
     author: `@usguyzpodcast`,
   },
   plugins: [
